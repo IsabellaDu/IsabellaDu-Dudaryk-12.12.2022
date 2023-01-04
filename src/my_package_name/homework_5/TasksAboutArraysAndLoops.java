@@ -18,7 +18,6 @@ public class TasksAboutArraysAndLoops {
         // Task 3
         int[] arrayForCalculateArithmeticMean = createArrayWithRandomNumbers(10);
         System.out.println(findArithmeticMean(arrayForCalculateArithmeticMean));
-
     }
 
     public static int[] createArrayWithRandomNumbers(int amountOfItems) {
