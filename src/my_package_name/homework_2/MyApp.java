@@ -1,4 +1,4 @@
-package my_package_name;
+package my_package_name.homework_2;
 
 public class MyApp {
     public static void main(String[] args) {
@@ -11,5 +11,6 @@ public class MyApp {
 
         System.out.println("Об'єм паралелепіпеда = " + volume);
         System.out.println("Довжина всіх сторін паралелепіпеда = " + length);
+        
     }
 }
