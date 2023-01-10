@@ -25,7 +25,7 @@ public class PersonAbroad extends Person implements DataUsable {
         if (isRoamingPaid) {
             return super.call();
         } else {
-            return "недостатньо коштів на рахунку";
+            return "Недостатньо коштів на рахунку";
         }
     }
 
@@ -34,16 +34,16 @@ public class PersonAbroad extends Person implements DataUsable {
         if (isRoamingPaid) {
             return super.call(anotherPerson);
         } else {
-            return "недостатньо коштів на рахунку";
+            return "Недостатньо коштів на рахунку";
         }
     }
 
     @Override
     public String useData() {
         if (isRoamingPaid) {
-            return "надано доступ до використання інтернету у роумнігу";
+            return "Надано доступ до використання інтернету у роумнігу";
         } else {
-            return "недостатньо коштів на рахунку для доступу послуги інтернет";
+            return "Недостатньо коштів на рахунку для доступу послуги інтернет";
         }
     }
 }
