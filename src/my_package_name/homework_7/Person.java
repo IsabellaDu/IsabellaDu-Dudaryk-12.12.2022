@@ -22,7 +22,7 @@ public class Person implements Callable {
 
     public String call(Person anotherPerson) {
 
-        if (this.name.equals(anotherPerson.name) && this.surname.equals(anotherPerson.surname) && this.city.equals(anotherPerson.city) && this.phoneNumber.equals(anotherPerson.phoneNumber)) {
+        if (this.equals(anotherPerson)) {
             return "Неможливо телефонувати самому собі";
         } else {
             return "Громадянин " + this.name + " " + this.surname + " телефонує громадянину " + anotherPerson.name + " " + anotherPerson.surname + " на номер " + anotherPerson.phoneNumber;
