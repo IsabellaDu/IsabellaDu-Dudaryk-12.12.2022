@@ -6,14 +6,16 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Student> students = CollectionOfStudents.generateListOfStudents();
+        ArrayList<Student> students = new ArrayList<>();
 
-        Student newStudent = new Student("Max", 1);
-        CollectionOfStudents.addNewStudent(students, newStudent);
+        StudentsMethodHelper.addNewStudent(students, new Student("Ivan", 1));
+        StudentsMethodHelper.addNewStudent(students, new Student("Ivanna", 2));
+        StudentsMethodHelper.addNewStudent(students, new Student("Marina", 2));
+        StudentsMethodHelper.addNewStudent(students, new Student("Max", 1));
 
-        CollectionOfStudents.removeStudent(students, 0);
+        StudentsMethodHelper.removeStudent(students, 0);
 
-        CollectionOfStudents.printStudents(students, 2);
+        StudentsMethodHelper.printStudents(students, 2);
     }
 
 }
