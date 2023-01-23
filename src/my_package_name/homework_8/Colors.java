@@ -6,7 +6,7 @@ public enum Colors {
     PURPLE("\u001B[35m"),
     CYAN("\u001B[36m");
 
-    private String colorCode;
+    private final String colorCode;
 
     Colors(String colorCode) {
         this.colorCode = colorCode;
@@ -14,9 +14,5 @@ public enum Colors {
 
     public String getColorCode() {
         return colorCode;
-    }
-
-    public void setColorCode(String colorCode) {
-        this.colorCode = colorCode;
     }
 }

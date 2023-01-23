@@ -18,8 +18,8 @@ public class Main {
         Person anotherPerson = new Person("Ivan", 10);
 
         System.out.println(person.compareAllInfo(anotherPerson));
-        System.out.println(person.compareByAge(anotherPerson.age));
-        System.out.println(person.compareByName(anotherPerson.name));
+        System.out.println(person.compareByAge(anotherPerson.getAge()));
+        System.out.println(person.compareByName(anotherPerson.getName()));
 
         /*
         try {
@@ -29,7 +29,7 @@ public class Main {
         }
         */
 
-        person.checkAge(person.age);
+        person.checkAge(person.getAge());
     }
 
 

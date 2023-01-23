@@ -2,8 +2,8 @@ package my_package_name.homework_8;
 
 public class Person implements Comparable {
 
-    String name;
-    int age;
+    private String name;
+    private int age;
 
     public String getName() {
         return name;
