@@ -1,6 +1,7 @@
 package my_package_name.homework_10;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +15,8 @@ public class Main {
 
         System.out.println(myCollection);
         System.out.println(sortCollectionByValue(myCollection));
+
+        System.out.println(sortCollectionByValueUsingStream(myCollection));
     }
 
     public static Map<String, String> sortCollectionByValue(Map<String, String> collection) {
@@ -30,5 +33,14 @@ public class Main {
             }
         }));
         return sortedCollection;
+    }
+
+    public static Map<String, String> sortCollectionByValueUsingStream(Map<String, String> collection) {
+
+        return collection
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
     }
 }
